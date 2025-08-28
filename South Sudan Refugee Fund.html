@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Sudan Refugee Fund</title>
+    <!-- Tailwind CSS CDN for utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for the 'Inter' font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a202c; /* A dark gray for good readability */
+        }
+        .hero-bg {
+            /* Using a placeholder image for the hero section */
+            background-image: url('https://placehold.co/1920x1080/000/FFF?text=Hope+for+South+Sudan');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax effect */
+        }
+        /* Custom styles to prevent horizontal scroll on small devices */
+        html {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="absolute top-0 left-0 w-full z-10 py-6">
+        <div class="container mx-auto flex justify-between items-center px-6 md:px-12">
+            <a href="https://www.southsudanfund.com" class="text-white text-3xl font-bold tracking-tight">South Sudan Refugee Fund</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-white text-lg font-medium hover:text-gray-200 transition-colors">About</a>
+                <a href="#impact" class="text-white text-lg font-medium hover:text-gray-200 transition-colors">Our Impact</a>
+                <a href="#donate" class="text-white text-lg font-medium hover:text-gray-200 transition-colors">Donate</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="text-white md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-90 absolute top-0 left-0 w-full pt-20 pb-8 px-6 text-center">
+            <a href="#about" class="block text-white text-2xl font-medium py-3 hover:text-gray-300">About</a>
+            <a href="#impact" class="block text-white text-2xl font-medium py-3 hover:text-gray-300">Our Impact</a>
+            <a href="#donate" class="block text-white text-2xl font-medium py-3 hover:text-gray-300">Donate</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="container mx-auto z-10 p-6 md:p-12 text-white">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-4 drop-shadow-lg">
+                Hope and A Future for South Sudan
+            </h1>
+            <p class="text-xl md:text-2xl font-medium mb-8 drop-shadow-md">
+                Your support provides life-saving assistance to millions of people displaced by conflict and crisis.
+            </p>
+            <a href="#donate" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-full shadow-lg transition-transform transform hover:scale-105 inline-block">
+                Donate Now
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 md:py-32 bg-white">
+        <div class="container mx-auto px-6 md:px-12 max-w-4xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">Our Mission</h2>
+            <p class="text-lg md:text-xl text-gray-700 text-center mb-12">
+                The South Sudan Refugee Fund is dedicated to providing emergency relief,
+                shelter, clean water, and educational opportunities to South Sudanese refugees
+                and internally displaced people. We work with local partners to deliver
+                sustainable, community-based solutions that foster resilience and hope.
+            </p>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md">
+                    <h3 class="text-3xl font-bold mb-4">The Crisis</h3>
+                    <p class="text-gray-700 mb-4">
+                        Years of conflict, violence, and climate-related disasters have led to one of the largest refugee crises in Africa.
+                        More than 2.3 million South Sudanese people are refugees in neighboring countries,
+                        with millions more internally displaced. They face severe food insecurity, lack of
+                        clean water, and limited access to healthcare and education.
+                    </p>
+                    <p class="text-gray-700">
+                        The situation is dire, but with your help, we can make a difference.
+                    </p>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/007bff/fff?text=Humanitarian+Aid" alt="A humanitarian aid worker giving supplies to a family" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Impact Section -->
+    <section id="impact" class="py-20 md:py-32 bg-gray-100">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Our Impact So Far</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Impact Card 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center transform transition-transform hover:scale-105">
+                    <div class="text-5xl font-bold text-indigo-600 mb-2">2.3M+</div>
+                    <div class="text-gray-600 font-medium">Refugees Assisted</div>
+                    <p class="mt-4 text-gray-700">
+                        Your donations have helped provide shelter, food, and security to over 2.3 million refugees across five countries.
+                    </p>
+                </div>
+                <!-- Impact Card 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center transform transition-transform hover:scale-105">
+                    <div class="text-5xl font-bold text-indigo-600 mb-2">300+</div>
+                    <div class="text-gray-600 font-medium">Clean Water Wells</div>
+                    <p class="mt-4 text-gray-700">
+                        We have built and repaired over 300 clean water wells, providing safe drinking water to thousands of families.
+                    </p>
+                </div>
+                <!-- Impact Card 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center transform transition-transform hover:scale-105">
+                    <div class="text-5xl font-bold text-indigo-600 mb-2">10K+</div>
+                    <div class="text-gray-600 font-medium">Children in School</div>
+                    <p class="mt-4 text-gray-700">
+                        Our education programs have enrolled over 10,000 children, giving them hope for a brighter future.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="py-20 md:py-32 bg-white">
+        <div class="container mx-auto px-6 md:px-12 max-w-3xl text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Donate & Make a Difference</h2>
+            <p class="text-xl text-gray-700 mb-12">
+                Your contribution provides essential relief to South Sudanese refugees. You can make a difference today.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 lg:grid-cols-3">
+                <!-- Western Union Donation Information -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4 text-indigo-600">Donate with Western Union</h3>
+                    <p class="text-gray-700 mb-6">
+                        You can make a direct money transfer to our organization through Western Union. Please use the following details for your transfer.
+                    </p>
+                    <div class="text-left space-y-4 text-gray-800">
+                        <div>
+                            <span class="font-semibold">Recipient Full Name:</span> South Sudan Fund
+                        </div>
+                        <div>
+                            <span class="font-semibold">Country:</span> Uganda
+                        </div>
+                        <div>
+                            <span class="font-semibold">City:</span> Kampala
+                        </div>
+                        <div>
+                            <span class="font-semibold">Message/Purpose:</span> South Sudan Refugee Fund
+                        </div>
+                    </div>
+                    <p class="mt-6 text-sm text-gray-600">
+                        After completing the transfer, please send us an email at <a href="mailto:info@southsudanfund.org" class="text-indigo-600 hover:underline">info@southsudanfund.org</a> with the transaction details so we can track and confirm your donation.
+                    </p>
+                </div>
+
+                <!-- PayPal Donation Section -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4 text-indigo-600">Donate with PayPal</h3>
+                    <p class="text-gray-700 mb-6">
+                        Click on a button below to donate a specific amount, or enter a custom amount to make a secure donation via PayPal.
+                    </p>
+
+                    <!-- PayPal Buttons -->
+                    <div class="flex flex-wrap justify-center gap-4 mb-6">
+                        <button class="paypal-btn bg-white hover:bg-gray-50 text-indigo-600 border border-indigo-600 font-bold py-2 px-6 rounded-full transition-colors" data-amount="1.00">$1</button>
+                        <button class="paypal-btn bg-white hover:bg-gray-50 text-indigo-600 border border-indigo-600 font-bold py-2 px-6 rounded-full transition-colors" data-amount="5.00">$5</button>
+                        <button class="paypal-btn bg-white hover:bg-gray-50 text-indigo-600 border border-indigo-600 font-bold py-2 px-6 rounded-full transition-colors" data-amount="10.00">$10</button>
+                        <button class="paypal-btn bg-white hover:bg-gray-50 text-indigo-600 border border-indigo-600 font-bold py-2 px-6 rounded-full transition-colors" data-amount="25.00">$25</button>
+                        <button class="paypal-btn bg-white hover:bg-gray-50 text-indigo-600 border border-indigo-600 font-bold py-2 px-6 rounded-full transition-colors" data-amount="50.00">$50</button>
+                    </div>
+
+                    <!-- Custom Amount Input -->
+                    <form id="paypal-form" class="flex flex-col gap-4">
+                        <input type="number" id="custom-amount" class="w-full p-3 rounded-lg border border-gray-300 text-center" placeholder="Or enter a custom amount" min="1" step="1">
+                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition-colors">
+                            Donate with PayPal
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Mobile Money Donation Section -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4 text-indigo-600">Donate with Mobile Money</h3>
+                    <p class="text-gray-700 mb-6">
+                        You can make a secure donation using your mobile phone with either MTN or Airtel Mobile Money. Please follow these steps to make a transfer.
+                    </p>
+
+                    <div class="text-left space-y-4 text-gray-800">
+                        <div>
+                            <span class="font-semibold">MTN Mobile Money:</span>
+                            <p class="text-sm pl-4">Dial `*165#` and select 'Send Money' -> 'To Mobile User'. Enter the number **+256 705 881941** and our full name **South Sudan Fund**.</p>
+                        </div>
+                        <div>
+                            <span class="font-semibold">Airtel Mobile Money:</span>
+                            <p class="text-sm pl-4">Dial `*185#` and select 'Send Money' -> 'To Mobile User'. Enter the number **+256 705 881941** and our full name **South Sudan Fund**.</p>
+                        </div>
+                    </div>
+                    <p class="mt-6 text-sm text-gray-600">
+                        After completing the transfer, please send us an email at <a href="mailto:info@southsudanfund.org" class="text-indigo-600 hover:underline">info@southsudanfund.org</a> with the transaction details (confirmation code, amount, and phone number) so we can track and confirm your donation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-12 text-gray-300">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p>&copy; 2024 <a href="https://www.southsudanfund.com" class="hover:text-white transition-colors">South Sudan Refugee Fund</a>. All Rights Reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="https://www.southsudanfund.com" class="hover:text-white transition-colors">Facebook</a>
+                    <a href="https://www.southsudanfund.com" class="hover:text-white transition-colors">Twitter</a>
+                    <a href="https://www.southsudanfund.com" class="hover:text-white transition-colors">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Get elements for interaction
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const paypalButtons = document.querySelectorAll('.paypal-btn');
+        const paypalForm = document.getElementById('paypal-form');
+        const customAmountInput = document.getElementById('custom-amount');
+
+        // Toggle mobile menu
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Function to handle PayPal donation
+        function handlePaypalDonation(amount) {
+            // In a real-world scenario, you would send this amount to your server to create a PayPal payment.
+            // For this static site, we will simulate a redirect to PayPal's sandbox with a generic link.
+            const genericPaypalLink = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=your-paypal-email@example.com&item_name=South Sudan Refugee Fund Donation&amount=${amount}.00&currency_code=USD`;
+            
+            // Open the PayPal link in a new tab
+            window.open(genericPaypalLink, '_blank');
+        }
+
+        // Add click event listeners to the pre-set amount buttons
+        paypalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const amount = button.getAttribute('data-amount');
+                handlePaypalDonation(amount);
+            });
+        });
+
+        // Add submit event listener for the custom amount form
+        paypalForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent the form from submitting normally
+            const customAmount = customAmountInput.value;
+            if (customAmount && customAmount >= 1) {
+                handlePaypalDonation(customAmount);
+            } else {
+                alert("Please enter a valid amount of $1 or more.");
+            }
+        });
+    </script>
+</body>
+</html>
